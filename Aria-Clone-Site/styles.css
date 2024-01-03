@@ -1,0 +1,838 @@
+:root{
+    --background-color: #fbfbfb;
+    --green-background-color: #153E52;
+    --dark-green-color: #113448;
+    --light-green-color: #14BF98;
+    --dark-gray-color: #484A46;
+    --light-gray-color: #787976;
+    --white-color: #FFFFFF;
+    --disabled-color: #E9ECEF;
+    --dark-white-color: #DFE5EC;
+    --light-grey-color: #EBE8E8;
+    --form-background-color: #2A5D77;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(images/first.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    gap: 1rem;
+}
+
+.home h1{
+    font-size: 4rem;
+}
+
+.home p{
+    font-size: 1rem;
+    width: 40%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid var(--light-green-color);
+    background-color: var(--light-green-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all 0.125s ease-in-out;
+    font-weight: 900;
+    font-size: x-small;
+    letter-spacing: 0.4ch;
+    font-size: 0.65rem;
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--light-green-color);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: .5rem 3rem;
+    box-sizing: border-box;
+    color: white;
+    background-color: var(--dark-green-color);
+    z-index: 1;
+}
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.125 ease-in-out;
+}
+
+nav a:visited{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+nav a:hover{
+    color: var(--light-green-color);
+}
+
+nav img{
+    height: 2rem;
+    margin: 5px;
+}
+
+nav img:hover{
+    cursor: pointer;
+    background-color:cornsilk;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin: .7rem;
+    padding-right: 5rem;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+
+/* <---------------------Intro class Started Here---------------> */
+.intro{
+    padding: 4rem 20vh;
+}
+
+.intro .content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.intro .content .text{
+    width: 30%;
+    margin: 60px;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.intro .content .image-container{
+    width: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.intro .content img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro .content img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.section-title{
+    color: var(--light-green-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.intro .content .text h3{
+    color: var(--dark-gray-color);
+    font-size: x-large;
+}
+
+.intro .content .text h4{
+    color: var(--dark-gray-color);
+}
+
+.intro .content .text  p{
+    color: var(--light-gray-color);
+    font-size: 14px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.intro .skill-list-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.intro .skill-list-container .skill-item{
+    width: 30%;
+    color: var(--dark-gray-color);
+    line-height: 1.5rem;
+}
+
+.intro .skill-list-container .skill-item h4{
+    font-size: x-large;
+    color:var(--dark-gray-color);
+}
+
+.intro .skill-item .fa-stack {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1.5rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    line-height: 6rem;
+    text-align: left;
+}
+
+.fa-stack {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.intro .skill-item .fa-stack .hexagon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: url(images/hexagon-green.svg) center center no-repeat;
+    background-size: 6rem 6rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.intro .skill-item .fa-solid {
+    color: var(--dark-white-color);
+    font-size: 2.5rem;
+    padding-left: 25px;
+    padding-top: 28px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* <-----------------------Service class Started Here-----------------> */
+.services{
+    padding: 5rem 0;
+}
+
+.services > span{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.services > h3{
+    text-align: center;
+    font-size: xx-large;
+    color: var(--dark-gray-color);
+}
+
+.services .service-list-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 3rem 12vw;
+    align-items: start;
+}
+
+.services .service-item img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 12rem;
+    filter: contrast(60%);
+}
+
+.services .service-list-container .service-item{
+    width: 30%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid var(--light-grey-color);
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+
+.services .service-item h4{
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    color: var(--dark-gray-color);
+    padding: 1.5rem;
+}
+
+.services .service-item p{
+    line-height: 1rem;
+    color: var(--light-gray-color);
+    padding: 0.2rem 3rem;
+}
+
+.services .service-item ul{
+    list-style-type: none;
+    line-height: 1rem;
+    color: var(--light-gray-color);
+    padding: 0.5rem 3rem;
+}
+
+.services .service-item ul li::before{
+    content: '\25a0';
+    color: var(--light-green-color);
+    margin-right: 5px;
+    font-size: 1.25rem;
+}
+
+.services .service-item h6{
+    font-size: large;
+    text-align: center;
+    color: var(--dark-gray-color);
+    padding-top: 1.5rem;
+}
+
+.services h6 .price{
+    color: var(--light-green-color);
+}
+
+.services .service-item button{
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.services .service-item button:hover{
+    background-color: var(--white-color);
+}
+
+/* <--------------Proposition Started Here-----------------> */
+.services .propositions{
+    display: flex;
+    flex-direction: row;
+}
+
+.services .propositions img{
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.propositions-1{
+    padding-top: 5rem;
+}
+
+.services .propositions .content{
+    width: 50%;
+    flex-shrink: 0;
+    color: var(--dark-gray-color);
+    box-sizing: border-box;
+}
+
+.services .propositions-1 .content{
+    margin: 5rem 0rem 5rem 4rem;
+    width: 40%;
+}
+
+.services .propositions h2{
+    font-size: xx-large;
+}
+
+.services .propositions h3{
+    padding: 2rem 0 1rem 2rem;
+    font-size: x-large;
+}
+
+.services .propositions p{
+    padding-left: 2rem;
+    padding-right: 10rem;
+    font-size: large;
+}
+
+.services .propositions-2 p{
+    padding-left: 2rem;
+    padding-right: 20rem;
+    font-size: large;
+}
+
+.services .propositions h3:hover{
+    cursor: pointer;
+    color: var(--light-green-color);
+}
+
+/* <------------Testimonials Started Here----------> */
+.services .testimonials{
+    padding: 5rem 20vw;
+}
+
+.services .testimonials h3{
+    color: var(--dark-gray-color);
+    text-align: center;
+    font-size: xx-large;
+}
+
+.services .testimonials p{
+    color: var(--dark-gray-color);
+    text-align: center;
+    font-weight: 600;
+}
+
+.services .testimonial-list-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding: 2rem 0;
+}
+
+.services .testimonial-item{
+    width: 30%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.services .testimonials img{
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.services .testimonials span{
+    font-size: large;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+}
+
+.services .testimonial-item p{
+    line-height: 1.5rem;
+}
+
+/* <----------------Call Me Section------------> */
+
+.call_me{
+    padding: 5rem 18vw;
+    background-color: var(--green-background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.call_me .content , .call_me .form{
+    width: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: var(--white-color);
+}
+
+.call_me .content h3{
+    font-size: 1.75rem;
+}
+
+.call_me .content p{
+    line-height: 1.5rem;
+    color: var(--light-grey-color);
+}
+
+.call_me .content ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.call_me .content ul li::before{
+    content: '\25a0';
+    color: var(--light-green-color);
+    margin-right: 5px;
+    font-size: 1.25rem;
+}
+
+.call_me form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.call_me form .terms-container label{
+    color: var(--light-grey-color);
+}
+
+.call_me label{
+    font-size: small;
+}
+
+.call_me form input, .call_me select{
+    background-color: var(--form-background-color );
+    color: var(--white-color);
+    border: 1px solid #39728f;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
+/*<----------------------------Project Section Started Here-------------------->  */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.projects .section-title{
+    font-size: large;
+}
+
+.projects h2{
+    color: var(--dark-gray-color);
+}
+
+.projects .button-group a {
+    display: inline-block;
+    margin-right: 0.1875rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.1875rem;
+    padding: 0.3125rem 1.375rem 0.25rem 1.375rem;
+    border-radius: 0.25rem;
+    background-color: #f1f4f7;
+    color: #7b7e85;
+    font: 700 0.75rem/1.25rem "Montserrat",sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.projects .button-group a:hover{
+    background-color: var(--light-green-color);
+    color: var(--white-color);
+}
+
+.projects .project-container{
+    margin-top: 2rem;
+    padding: 0 15rem;
+}
+
+.projects .image-container{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projects .image-container-2{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projects .project-container-image{
+    width: 25%;
+    object-fit: cover;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-container-image img{
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: transform 0.8s ease-in-out;
+}
+
+.projects .project-container-image img:hover{
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.projects .team{
+    padding: 5rem 0;
+}
+
+.projects .team h3{
+    color: var(--dark-gray-color);
+    text-align: center;
+    font-size: xx-large;
+}
+
+.projects .team p{
+    color: var(--dark-gray-color);
+    text-align: center;
+}
+
+.projects .team-container-list{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-left: 10rem;
+}
+
+.projects .team-container{
+    width: 20%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.projects .team-container-list img{
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 8px;
+}
+
+.projects .team-container-list img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.projects .team-container ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.projects .team-container span{
+    color: var(--dark-gray-color);
+    font-weight: 600;
+    font-size: larger;
+}
+
+.projects .fa-stack {
+    margin-right: 0.25rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.125rem;
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.projects .fa-stack .hexagon {
+    position: absolute;
+    width: 3.25rem;
+    height: 3.25rem;
+    background: url(images/hexagon-green.svg) center center no-repeat;
+    background-size: 3.25rem 3.25rem;
+    transition: all 0.2s ease;
+}
+
+.projects .team-container .fa-bounce {
+    font-size: 1.5rem;
+    line-height: 3.25rem;
+    color: #fff;
+    transition: all 0.2s ease;
+    padding-left: 13.5px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<< About Section >>>>>>>>>>>>>>>>>>>*/
+
+.about{
+    display: flex;
+    gap: 5rem;
+}
+
+.about .image-container{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 5rem 0 0 10rem;
+}
+
+.about img{
+    width: 100%;    
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    
+}
+
+.about .content{
+    width: 50%;
+}
+
+.about .content .text{
+    margin-top: 5rem;
+    box-sizing: border-box;
+}
+
+.about .text h3{
+    margin-top: 0.5rem;
+    color: var(--dark-gray-color);
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.about .text p{
+    color: var(--dark-gray-color);
+}
+
+.about .text ul{
+    line-height: 2rem;
+    color: var(--dark-gray-color);
+    list-style: none;
+}
+
+.about .text ul li::before{
+    content: '\25a0';
+    color: var(--light-green-color);
+    margin-right: 5px;
+    font-size: 1.25rem;
+}
+
+.about .text .nums-contain{
+    display: flex;
+}
+
+.about .text .nums{
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+    color: var(--light-green-color);
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.about .text .nums-contain p{
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    font-size: small;
+    font-weight: 600;
+}
+
+/*<----------------------------------Contact Section Started Here------------------------> */
+
+.contact{
+    padding: 10rem 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--dark-gray-color);
+}
+
+.contact .content , .contact .form{
+    width: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.contact .content h3{
+    font-size: xx-large;
+    padding-top: 0.5rem;
+}
+
+.contact .content ul{
+    padding-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact form input, textarea{
+    background-color: var(--white-color);
+    border: 1px solid lightgrey;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
+.contact .fa-stack {
+    margin-right: 0.25rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.125rem;
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.contact .fa-stack .hexagon {
+    position: absolute;
+    width: 3.25rem;
+    height: 3.25rem;
+    background: url(images/hexagon-green.svg) center center no-repeat;
+    background-size: 3.25rem 3.25rem;
+    transition: all 0.2s ease;
+}
+
+.contact .content .fa-beat {
+    font-size: 1.5rem;
+    line-height: 3.25rem;
+    color: #fff;
+    transition: all 0.2s ease;
+    padding-left: 13.5px;
+}
+
+/* <---------------------------Footer-------------------------> */
+footer{
+    height: 400px;
+    color: #dfe5ec;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 6rem;
+    padding: 6rem 0;
+    
+}
+
+.footer1{
+    background-color: var(--green-background-color);
+}
+
+footer .links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 .copy{
+    text-align: center;
+    padding-bottom: 2rem;
+}
