@@ -6,7 +6,7 @@ This project enables users to search and explore emojis with a dynamic and user-
 
 ## Demo
 
-[View Demo](<insert demo link here>)
+[View Demo](<https://jishuchouhan.github.io/Frontend-Assignment/JavaScript/Emoji-Project/>)
 
 ## Technologies Used
 
