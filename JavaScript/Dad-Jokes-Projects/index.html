@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad-Jokes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main-container{
+            padding: 50px;
+            box-shadow: 0 6px 10px rgba(0,0,0,.3);
+            border-radius: 15px;
+            width: 85%;
+            text-align: center;
+            color: darkgreen;
+        }
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 5px 5px 2px rgba(0,0,0,.3);
+            letter-spacing: 2px;
+        }
+        p{
+            margin: 3rem ;
+            background-color: rgba(217, 57, 57, 0.3);
+            border-color: rgba(70, 23, 23, 0.9);
+            color: rgb(107, 1, 134);
+            padding: 10px;
+            font-size: x-large;
+            font-weight: 900;
+        }
+        button{
+            cursor: pointer;
+            padding: 0.5rem;
+            background-color: rgba(255,255,255,.3);
+            border-color: rgba(255,255,255,.9);
+            color: darkgreen;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main-container">
+            <h1>Dad Joke Generater</h1>
+            <p id="joke">
+                Dad Joke
+            </p>
+            <button id="btn">
+                TELL ME A JOKE
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
