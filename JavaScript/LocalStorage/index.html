@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSave</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .main-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #e0b0b0;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Auto Save TextArea</h1>
+        <textarea id="textArea" placeholder="Start typing here..." cols="50" rows="10"></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
