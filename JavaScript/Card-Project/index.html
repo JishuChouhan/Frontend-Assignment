@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Pro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: aliceblue;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .user {
+            text-align: center;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            /* flex-direction: column; */
+        }
+
+        .label {
+            flex: 1;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #user-card span {
+            flex: 2;
+            color: #444;
+            text-align: left;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user">
+            <h1>User Information</h1>
+            <div id="user-card">
+                <div class="info">
+                    <span class="label">First Name:</span>
+                    <span id="f_name"></span>
+                </div>
+                <div class="info">
+                    <span class="label">Last Name:</span>
+                    <span id="l_name"></span>
+                </div>
+                <div class="info">
+                    <span class="label">Country:</span>
+                    <span id="country"></span>
+                </div>
+                <div class="info">
+                    <span class="label">Phone Number:</span>
+                    <span id="number"></span>
+                </div>
+                <div class="info">
+                    <span class="label">State:</span>
+                    <span id="state"></span>
+                </div>
+                <div class="info">
+                    <span class="label">City:</span>
+                    <span id="city"></span>
+                </div>
+                <div class="info">
+                    <span class="label">Village:</span>
+                    <span id="village"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
