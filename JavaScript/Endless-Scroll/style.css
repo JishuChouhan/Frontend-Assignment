@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: rgb(126, 158, 158);
+    font-family: cursive;
+}
+#image-container{
+    margin: 10px 20%;
+    margin-top: 5px;
+    max-width: 500px;
+    padding-left: 12rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(173, 129, 159, 0.8);
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
